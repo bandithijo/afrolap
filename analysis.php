@@ -4,7 +4,7 @@
 <div class="row content">
 
 <div class="col-sm-9 text-left">
-<h1><strong>Pertanyaan Analisis :</strong></h1>
+<h1><i class="glyphicon glyphicon-list-alt"></i>&nbsp;<strong>Pertanyaan Analisis :</strong></h1>
 <div class="list-group">
     <a class="list-group-item" href="analysis.php?q=1"><span class="badge">1</span>&nbsp; Tunjukkan hasil penjualan setiap tahun?</a>
     <a class="list-group-item" href="analysis.php?q=2"><span class="badge">2</span>&nbsp; Pada tahun 2002, bulan apa penjualan tertinggi?</a>
@@ -26,27 +26,12 @@ if($q && $q == 1) {
 <hr>
 <div style="margin-top:35px;"></div>
 <div class="row">
-<div class="col-sm-3">
-<span class="alert alert-success" style="font-size:20pt;"><strong>Jawaban No. 1&nbsp;</strong></span>
+<div class="col-sm-4">
+<span class="alert alert-success" style="font-size:20pt;"><i class="glyphicon glyphicon-ok"></i>&nbsp;<strong>Jawaban No. 1&nbsp;</strong></span>
 </div>
 </div><!-- row -->
 <br>
 
-<div class="row">
-<div class="col-md-6">
-    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Penjualan per Tahun</strong></h4>
-    <canvas id="chart_1_totalpenjualan" ></canvas>
-    <script src="assets/charts/chart_1_totalpenjualan.js"></script>
-</div>
-
-<div class="col-md-6">
-    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Laba per Tahun</strong></h4>
-    <canvas id="chart_1_totallaba" ></canvas>
-    <script src="assets/charts/chart_1_totallaba.js"></script>
-</div>
-</div><!-- row -->
-
-<br>
 <h4><i class="glyphicon glyphicon-th-list"></i>&nbsp;<strong>Tabel Total Penjualan beserta Laba per Tahun</strong></h4>
 <table class="table table-striped">
 <tr class="success">
@@ -74,11 +59,26 @@ while($row = mysqli_fetch_array($result)){
         <td><?php echo $row['total_penjualan']; ?></td>
         <td><?php echo $row['total_laba']; ?></td>
     </tr>
-    <?php
-}
-}
-    ?>
+<?php
+} ?>
 </table>
+
+<div class="row">
+<div class="col-md-6">
+    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Penjualan per Tahun</strong></h4>
+    <canvas id="chart_1_totalpenjualan" ></canvas>
+    <script src="assets/charts/chart_1_totalpenjualan.js"></script>
+</div>
+
+<div class="col-md-6">
+    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Laba per Tahun</strong></h4>
+    <canvas id="chart_1_totallaba" ></canvas>
+    <script src="assets/charts/chart_1_totallaba.js"></script>
+</div>
+</div><!-- row -->
+<br>
+<?php
+} ?>
 <!-- Akhir No. 1 -->
 
 
@@ -91,27 +91,12 @@ if($q && $q == 2) {
 <hr>
 <div style="margin-top:35px;"></div>
 <div class="row">
-<div class="col-sm-3">
-<span class="alert alert-success" style="font-size:20pt;"><strong>Jawaban No. 2&nbsp;</strong></span>
+<div class="col-sm-4">
+<span class="alert alert-success" style="font-size:20pt;"><i class="glyphicon glyphicon-ok"></i>&nbsp;<strong>Jawaban No. 2&nbsp;</strong></span>
 </div>
 </div><!-- row -->
 <br>
 
-<div class="row">
-<div class="col-md-6">
-    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Penjualan per Bulan di Tahun 2002</strong></h4>
-    <canvas id="chart_2_totalpenjualan" ></canvas>
-    <script src="assets/charts/chart_2_totalpenjualan.js"></script>
-</div>
-
-<div class="col-md-6">
-    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Laba per Bulan di Tahun 2002</strong></h4>
-    <canvas id="chart_2_totallaba" ></canvas>
-    <script src="assets/charts/chart_2_totallaba.js"></script>
-</div>
-</div><!-- row -->
-
-<br>
 <h4><i class="glyphicon glyphicon-th-list"></i>&nbsp;<strong>Tabel Total Penjualan Tertinggi pada Tahun 2002</strong></h4>
 <table class="table table-striped">
 <tr class="success">
@@ -142,12 +127,29 @@ while($row = mysqli_fetch_array($result)){
         <td><?php echo $row['total_penjualan']; ?></td>
         <td><?php echo $row['total_laba']; ?></td>
     </tr>
-    <?php
-}
-}
-    ?>
+<?php
+} ?>
 </table>
+
+<div class="row">
+<div class="col-md-6">
+    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Penjualan per Bulan di Tahun 2002</strong></h4>
+    <canvas id="chart_2_totalpenjualan" ></canvas>
+    <script src="assets/charts/chart_2_totalpenjualan.js"></script>
+</div>
+
+<div class="col-md-6">
+    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Laba per Bulan di Tahun 2002</strong></h4>
+    <canvas id="chart_2_totallaba" ></canvas>
+    <script src="assets/charts/chart_2_totallaba.js"></script>
+</div>
+</div><!-- row -->
+
+<br>
+<?php
+} ?>
 <!-- Akhir No. 2 -->
+
 
 <!-- No. 3 -->
 <?php
@@ -157,21 +159,12 @@ if($q && $q == 3) {
 <hr>
 <div style="margin-top:35px;"></div>
 <div class="row">
-<div class="col-sm-3">
-<span class="alert alert-success" style="font-size:20pt;"><strong>Jawaban No. 3&nbsp;</strong></span>
+<div class="col-sm-4">
+<span class="alert alert-success" style="font-size:20pt;"><i class="glyphicon glyphicon-ok"></i>&nbsp;<strong>Jawaban No. 3&nbsp;</strong></span>
 </div>
 </div><!-- row -->
 <br>
 
-<div class="row">
-<div class="col-md-6">
-    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Lokasi Penjualan Tertinggi</strong></h4>
-    <canvas id="chart_3_lokasitotalpenjualan" ></canvas>
-    <script src="assets/charts/chart_3_lokasitotalpenjualan.js"></script>
-</div>
-</div><!-- row -->
-
-<br>
 <h4><i class="glyphicon glyphicon-th-list"></i>&nbsp;<strong>Tabel Lokasi Penjualan Tertinggi</strong></h4>
 <table class="table table-striped">
 <tr class="success">
@@ -199,11 +192,21 @@ while($row = mysqli_fetch_array($result)){
         <td><?php echo $row['penjualan_tertinggi']; ?></td>
 
     </tr>
-    <?php
-}
-}
-    ?>
+<?php
+} ?>
 </table>
+
+<div class="row">
+<div class="col-md-6">
+    <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Lokasi Penjualan Tertinggi</strong></h4>
+    <canvas id="chart_3_lokasitotalpenjualan" ></canvas>
+    <script src="assets/charts/chart_3_lokasitotalpenjualan.js"></script>
+</div>
+</div><!-- row -->
+
+<br>
+<?php
+} ?>
 <!-- Akhir No. 3 -->
 
 <!-- No. 4 -->
@@ -218,7 +221,7 @@ if($q && $q == 4) {
     <th>Penjualan</th>
     <th>Laba</th>
 <?php
-// query
+// query no. 4
 $query = "SELECT produk.namaproduk as produk,
                     produk.hargabahan as harga,
                     (penjualan.penjualan/produk.hargabahan) as jumlah,
@@ -240,12 +243,13 @@ while($row = mysqli_fetch_array($result)){
         <td><?php echo $row['laba']; ?></td>
 
     </tr>
-    <?php
-}
-}
-    ?>
+<?php
+} ?>
 </table>
+<?php
+} ?>
 <!-- Akhir No. 4 -->
+
 
 <!-- No. 5 -->
 <?php
@@ -273,32 +277,26 @@ while($row = mysqli_fetch_array($result)){
         <td><?php echo $row['total_penjualan']; ?></td>
 
     </tr>
-    <?php
-}
-}
-    ?>
+<?php
+} ?>
 </table>
+<?php
+} ?>
 <!-- Akhir No. 5 -->
+
+
 
 </div><!-- col-sm-12 -->
 
 <div class="col-sm-3 sidenav">
     <div class="well">
-    <h4>Developer Team</h4>
-    <ol>
-        <li>Arti Ramanita</li>
-        <li>Muhammad Fajar Setiawan</li>
-        <li>Rizqi Nur Assyaufi</li>
-    </0l>
-    </div>
-    <div class="well">
-    <h4>Our Mission</h4>
-    <p>
-    Adipisicing minus perferendis quos eius laborum. Voluptatem reiciendis dolores odio beatae repudiandae Eaque in eligendi quam nemo vel eveniet recusandae fugit, magni mollitia deserunt? Qui provident illo molestias ad porro.
-    Dolor expedita hic dolor commodi voluptate! Molestiae laborum dignissimos minus ipsam neque Autem amet omnis sequi id neque Fugiat quae dolores quidem consequatur ratione eligendi. Eum voluptates voluptates nemo dicta.
-
-    </p>
-    </div>
+        <h4><i class="glyphicon glyphicon-user"></i>&nbsp;<strong>Developer Team</strong></h4>
+        <ol>
+            <li>Arti Ramanita</li>
+            <li>Muhammad Fajar Setiawan</li>
+            <li>Rizqi Nur Assyaufi</li>
+        </ol>
+    </div><!-- well -->
 
 </div><!-- col-sm-2 sidenav -->
 

@@ -26,10 +26,10 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="import.php">Import</a></li>
-            <li><a href="analysis.php">Analysis</a></li>
-            <li><a href="export.php">Export</a></li>
+            <li><a href="index.php"><i class="glyphicon glyphicon-home"></i>&nbsp;Home</a></li>
+            <li><a href="import.php"><i class="glyphicon glyphicon-edit"></i>&nbsp;Import</a></li>
+            <li><a href="analysis.php"><i class="glyphicon glyphicon-check"></i>&nbsp;Analysis</a></li>
+            <li><a href="export.php"><i class="glyphicon glyphicon-share"></i>&nbsp;Export</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
             <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
