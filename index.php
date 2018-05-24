@@ -3,23 +3,15 @@
 <div class="container-fluid">
 <div class="row content">
 
-<div class="col-sm-9 text-left">
+<div class="col-sm-12 text-center">
 
-<h1>Ini Halaman HOME, Bosku !</h1>
+<div style="margin-top:160px"></div>
+<span style="font-size:100pt"><i class="glyphicon glyphicon-home"></i></span>
+<h1 style="font:40pt 'Anton';margin-top:-110px;"><br>Ini Halaman HOME,<br>Bosku !</h1>
+<div style="margin-bottom:100px"></div>
+</div>
 
-</div><!-- col-sm-9 -->
-
-<div class="col-sm-3 sidenav">
-    <div class="well">
-    <h4>Developer Team</h4>
-    <ol>
-        <li>Arti Ramanita</li>
-        <li>Muhammad Fajar Setiawan</li>
-        <li>Rizqi Nur Assyaufi</li>
-    </ol>
-    </div>
-
-</div><!-- col-sm-3 sidenav -->
+</div><!-- col-sm-12 -->
 
 </div><!-- row content -->
 </div><!-- container -->

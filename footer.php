@@ -1,5 +1,5 @@
     <footer class="container-fluid text-center">
-        <p><span style="font-size:25px;location:relative;top:7px;" class="glyphicon glyphicon-tag"></span>&nbsp;Copyright &copy; - Arti Ramanita, Muh. Fajar Setiawan, Rizqi Nur Assyaufi</p>
+        <p><span style="font-size:25px;location:relative;top:7px;" class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Copyright &copy; 2018 - Arti Fajar Rizqi Dev.</p>
     </footer>
 
 
