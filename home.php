@@ -5,8 +5,8 @@
 <div class="col-sm-12 text-center">
 
 <div style="margin-top:160px"></div>
-<span style="font-size:100pt"><i class="glyphicon glyphicon-edit"></i></span>
-<h1 style="font:40pt 'Anton';margin-top:-110px;"><br>Ini Halaman IMPORT,<br>Bosku !</h1>
+<span style="font-size:100pt"><i class="glyphicon glyphicon-home"></i></span>
+<h1 style="font:40pt 'Anton';margin-top:-110px;"><br>Ini Halaman HOME,<br>Bosku !</h1>
 <div style="margin-bottom:100px"></div>
 </div>
 
@@ -14,4 +14,3 @@
 
 </div><!-- row content -->
 </div><!-- container -->
-

@@ -1,4 +1,3 @@
-<?php include 'header.php'; ?>
 
 <div style="margin-top:50px;"></div>
 <div class="container-fluid">
@@ -377,4 +376,3 @@ while($row = mysqli_fetch_array($result)){
 
 <div style="margin-bottom:50px;"></div>
 
-<?php include 'footer.php'; ?>
