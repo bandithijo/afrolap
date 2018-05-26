@@ -6,7 +6,11 @@
    $page = isset($_GET['page']) ? ($_GET['page']) : "";
 
    // proses
-   if ($page == 'analysis') {
+   if ($page == 'data') {
+      // output
+      include_once 'data.php';
+   }
+   else if ($page == 'analysis') {
       // output
       include_once 'analysis.php';
    }

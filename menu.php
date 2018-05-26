@@ -7,11 +7,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"><img src="assets/img/site/logo_brand.png" style="width:135px;position:relative;top:-10px;"></a>
+            <a class="navbar-brand" href="index.php"><img src="aset/img/site/logo_brand.png" style="width:135px;position:relative;top:-10px;"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="index.php"><i class="glyphicon glyphicon-home"></i>&nbsp;Home</a></li>
+                <li><a href="index.php?page=data"><i class="glyphicon glyphicon-unchecked"></i>&nbsp;Data</a></li>
                 <li><a href="index.php?page=analysis"><i class="glyphicon glyphicon-check"></i>&nbsp;Analysis</a></li>
 
                 <?php

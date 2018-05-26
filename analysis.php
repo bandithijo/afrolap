@@ -10,7 +10,7 @@ $link = mysqli_connect('localhost', 'root', '', 'dw_tokos');
 ?>
 
 <div class="col-sm-12 text-left">
-<h1><i class="glyphicon glyphicon-list-alt"></i>&nbsp;<strong>Pertanyaan Analisis :</strong></h1>
+<h1><i class="glyphicon glyphicon-check"></i>&nbsp;<strong>Pertanyaan Analisis :</strong></h1>
 <div class="panel-group" id="accordion">
 
 <!-- --------------------------------------------------------------------- -->
@@ -68,15 +68,26 @@ while($row = mysqli_fetch_array($result)){
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Penjualan per Tahun</strong></h4>
     <canvas id="chart_1_totalpenjualan" ></canvas>
-    <script src="assets/charts/chart_1_totalpenjualan.js"></script>
+    <script src="aset/charts/chart_1_totalpenjualan.js"></script>
 </div>
 
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Laba per Tahun</strong></h4>
     <canvas id="chart_1_totallaba" ></canvas>
-    <script src="assets/charts/chart_1_totallaba.js"></script>
+    <script src="aset/charts/chart_1_totallaba.js"></script>
 </div>
 </div><!-- row -->
+
+<?php
+if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+?>
+<br>
+<button type="submit" name="export_1" class="btn btn-primary" onClick="alert('Data Berhasil di Export !')">
+<span class="glyphicon glyphicon-share"></span> Export
+</button>
+<?php
+}
+?>
 <!-- Akhir No. 1 -->
 
         </div><!-- panel-body -->
@@ -144,15 +155,26 @@ while($row = mysqli_fetch_array($result)){
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Penjualan per Bulan di Tahun 2002</strong></h4>
     <canvas id="chart_2_totalpenjualan" ></canvas>
-    <script src="assets/charts/chart_2_totalpenjualan.js"></script>
+    <script src="aset/charts/chart_2_totalpenjualan.js"></script>
 </div>
 
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Laba per Bulan di Tahun 2002</strong></h4>
     <canvas id="chart_2_totallaba" ></canvas>
-    <script src="assets/charts/chart_2_totallaba.js"></script>
+    <script src="aset/charts/chart_2_totallaba.js"></script>
 </div>
 </div><!-- row -->
+
+<?php
+if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+?>
+<br>
+<button type="submit" name="export_2" class="btn btn-primary" onClick="alert('Data Berhasil di Export !')">
+<span class="glyphicon glyphicon-share"></span> Export
+</button>
+<?php
+}
+?>
 <!-- Akhir No. 2 -->
 
         </div><!-- panel-body -->
@@ -217,9 +239,20 @@ while($row = mysqli_fetch_array($result)){
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Total Lokasi Penjualan Tertinggi</strong></h4>
     <canvas id="chart_3_lokasitotalpenjualan" ></canvas>
-    <script src="assets/charts/chart_3_lokasitotalpenjualan.js"></script>
+    <script src="aset/charts/chart_3_lokasitotalpenjualan.js"></script>
 </div>
 </div><!-- row -->
+
+<?php
+if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+?>
+<br>
+<button type="submit" name="export_3" class="btn btn-primary" onClick="alert('Data Berhasil di Export !')">
+<span class="glyphicon glyphicon-share"></span> Export
+</button>
+<?php
+}
+?>
 <!-- Akhir No. 3 -->
 
         </div><!-- panel-body -->
@@ -290,9 +323,20 @@ while($row = mysqli_fetch_array($result)){
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Produk Paling Banyak Terjual</strong></h4>
     <canvas id="chart_4_produkbanyakterjual" ></canvas>
-    <script src="assets/charts/chart_4_produkbanyakterjual.js"></script>
+    <script src="aset/charts/chart_4_produkbanyakterjual.js"></script>
 </div>
 </div><!-- row -->
+
+<?php
+if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+?>
+<br>
+<button type="submit" name="export_4" class="btn btn-primary" onClick="alert('Data Berhasil di Export !')">
+<span class="glyphicon glyphicon-share"></span> Export
+</button>
+<?php
+}
+?>
 <!-- Akhir No. 4 -->
 
         </div><!-- panel-body -->
@@ -355,9 +399,20 @@ while($row = mysqli_fetch_array($result)){
 <div class="col-md-6">
     <h4><i class="glyphicon glyphicon-stats"></i>&nbsp;<strong>Grafik Pembeli Tertinggi</strong></h4>
     <canvas id="chart_5_pembelitertinggi" ></canvas>
-    <script src="assets/charts/chart_5_pembelitertinggi.js"></script>
+    <script src="aset/charts/chart_5_pembelitertinggi.js"></script>
 </div>
 </div><!-- row -->
+
+<?php
+if(isset($_SESSION['username']) && isset($_SESSION['password'])){
+?>
+<br>
+<button type="submit" name="export_5" class="btn btn-primary" onClick="alert('Data Berhasil di Export !')">
+<span class="glyphicon glyphicon-share"></span> Export
+</button>
+<?php
+}
+?>
 <!-- Akhir No. 5 -->
 
         </div><!-- panel-body -->
