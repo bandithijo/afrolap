@@ -22,11 +22,9 @@
                 <li><a href="index.php?page=import"><i class="glyphicon glyphicon-edit"></i>&nbsp;Import</a></li>
                 <li><a href="index.php?page=export"><i class="glyphicon glyphicon-share"></i>&nbsp;Export</a></li>
                 <?php
-                }
-                else {
+                } else {
                     echo "";
-                }
-                ?>
+                } ?>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
